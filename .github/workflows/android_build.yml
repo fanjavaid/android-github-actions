@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Run Linter
-        run: ./gradlew ktlintStagingDebugCheck
+        run: ./gradlew ktlintCheck
       - name: Run Test
         run: ./gradlew testDebugUnitTest
       - name: Restore Cache
